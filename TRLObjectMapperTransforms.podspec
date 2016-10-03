@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "ObjectMapperTransforms"
-  s.version      = "1.0.2"
+  s.name         = "TRLObjectMapperTransforms"
+  s.version      = "1.1.0"
   s.summary      = "ObjectMapperTransforms - Any To Any(String|Int|Double|Bool) Transform"
   s.homepage     = "http://futao.me/"
   s.license      = 'MIT'
   s.author       = "Ftkey"
   s.requires_arc = true
-  s.source       = {:git => 'https://github.com/Ftkey/ObjectMapperTransforms.git', :tag => s.version.to_s }
+  s.source       = {:git => 'https://github.com/arifken/ObjectMapperTransforms.git', :tag => s.version.to_s }
 
   s.watchos.deployment_target = '2.0'
   s.ios.deployment_target = '8.0'
