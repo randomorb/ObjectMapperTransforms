@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TRLObjectMapperTransforms"
-  s.version      = "2.0.3"
+  s.version      = "2.0.5"
   s.summary      = "ObjectMapperTransforms - Any To Any(String|Int|Double|Bool) Transform"
   s.homepage     = "http://futao.me/"
   s.license      = 'MIT'
