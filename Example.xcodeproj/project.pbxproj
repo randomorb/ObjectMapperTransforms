@@ -15,6 +15,8 @@
 		2B0F72571D127D440070C3E0 /* AnyToransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0F72561D127D440070C3E0 /* AnyToransformTests.swift */; };
 		2C4F28AA89F8F41C5D79B53F /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE509A2D960811394E972B2 /* Pods_Example.framework */; };
 		BC580D548B6313DAA3ECED01 /* Pods_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DA02DE5D20D5F42412674E /* Pods_ExampleTests.framework */; };
+		D352566D23D7D05100FEC6E0 /* TRLObjectMapperTransforms.h in Headers */ = {isa = PBXBuildFile; fileRef = D352566B23D7D05100FEC6E0 /* TRLObjectMapperTransforms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D352567423D7D09600FEC6E0 /* AnyToAnyTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352567323D7D09600FEC6E0 /* AnyToAnyTransforms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		673F23343B699430397B04D8 /* Pods-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleTests/Pods-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACE509A2D960811394E972B2 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DA02DE5D20D5F42412674E /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D352566923D7D05100FEC6E0 /* TRLObjectMapperTransforms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TRLObjectMapperTransforms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D352566B23D7D05100FEC6E0 /* TRLObjectMapperTransforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRLObjectMapperTransforms.h; sourceTree = "<group>"; };
+		D352566C23D7D05100FEC6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D352567323D7D09600FEC6E0 /* AnyToAnyTransforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyToAnyTransforms.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D352566623D7D05100FEC6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +84,7 @@
 			children = (
 				2B0F72351D127CD00070C3E0 /* Example */,
 				2B0F724A1D127CD10070C3E0 /* ExampleTests */,
+				D352566A23D7D05100FEC6E0 /* TRLObjectMapperTransforms */,
 				2B0F72341D127CD00070C3E0 /* Products */,
 				56C38362703C4784EFCBB629 /* Pods */,
 				69BD23AB1C2AE596A0E0600F /* Frameworks */,
@@ -82,6 +96,7 @@
 			children = (
 				2B0F72331D127CD00070C3E0 /* Example.app */,
 				2B0F72471D127CD10070C3E0 /* ExampleTests.xctest */,
+				D352566923D7D05100FEC6E0 /* TRLObjectMapperTransforms.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +143,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D352566A23D7D05100FEC6E0 /* TRLObjectMapperTransforms */ = {
+			isa = PBXGroup;
+			children = (
+				D352567223D7D09600FEC6E0 /* Sources */,
+				D352566B23D7D05100FEC6E0 /* TRLObjectMapperTransforms.h */,
+				D352566C23D7D05100FEC6E0 /* Info.plist */,
+			);
+			path = TRLObjectMapperTransforms;
+			sourceTree = "<group>";
+		};
+		D352567223D7D09600FEC6E0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D352567323D7D09600FEC6E0 /* AnyToAnyTransforms.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D352566423D7D05100FEC6E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D352566D23D7D05100FEC6E0 /* TRLObjectMapperTransforms.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2B0F72321D127CD00070C3E0 /* Example */ = {
@@ -172,6 +216,25 @@
 			productReference = 2B0F72471D127CD10070C3E0 /* ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D352566823D7D05100FEC6E0 /* TRLObjectMapperTransforms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D352567023D7D05100FEC6E0 /* Build configuration list for PBXNativeTarget "TRLObjectMapperTransforms" */;
+			buildPhases = (
+				D352566423D7D05100FEC6E0 /* Headers */,
+				D352566523D7D05100FEC6E0 /* Sources */,
+				D352566623D7D05100FEC6E0 /* Frameworks */,
+				D352566723D7D05100FEC6E0 /* Resources */,
+				D352567523D7D0F900FEC6E0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRLObjectMapperTransforms;
+			productName = TRLObjectMapperTransforms;
+			productReference = D352566923D7D05100FEC6E0 /* TRLObjectMapperTransforms.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,6 +255,11 @@
 						LastSwiftMigration = 0800;
 						TestTargetID = 2B0F72321D127CD00070C3E0;
 					};
+					D352566823D7D05100FEC6E0 = {
+						CreatedOnToolsVersion = 11.3;
+						DevelopmentTeam = D9S7HSV6HJ;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 2B0F722E1D127CD00070C3E0 /* Build configuration list for PBXProject "Example" */;
@@ -199,6 +267,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -209,6 +278,7 @@
 			targets = (
 				2B0F72321D127CD00070C3E0 /* Example */,
 				2B0F72461D127CD10070C3E0 /* ExampleTests */,
+				D352566823D7D05100FEC6E0 /* TRLObjectMapperTransforms */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +295,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2B0F72451D127CD10070C3E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D352566723D7D05100FEC6E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,6 +386,24 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		D352567523D7D0F900FEC6E0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
+		};
 		DF7CF1B2186EF75CDD0EFC8E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,6 +436,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0F72571D127D440070C3E0 /* AnyToransformTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D352566523D7D05100FEC6E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D352567423D7D09600FEC6E0 /* AnyToAnyTransforms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +630,94 @@
 			};
 			name = Release;
 		};
+		D352566E23D7D05100FEC6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D9S7HSV6HJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TRLObjectMapperTransforms/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonbro.TRLObjectMapperTransforms;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D352566F23D7D05100FEC6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D9S7HSV6HJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TRLObjectMapperTransforms/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonbro.TRLObjectMapperTransforms;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +744,15 @@
 			buildConfigurations = (
 				2B0F72541D127CD10070C3E0 /* Debug */,
 				2B0F72551D127CD10070C3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D352567023D7D05100FEC6E0 /* Build configuration list for PBXNativeTarget "TRLObjectMapperTransforms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D352566E23D7D05100FEC6E0 /* Debug */,
+				D352566F23D7D05100FEC6E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
