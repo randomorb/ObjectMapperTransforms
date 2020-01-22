@@ -43,7 +43,7 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = ""
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
